@@ -23,64 +23,104 @@
             <div class="col-9 text-center"><a href="index.html">หน้าแรก (Home)</a> | <a href="about.html">เกี่ยวกับ (About)</a> | <a href="ep.html">ตอนทั้งหมด (All EP)</a></div>
             <div class="col-12"><HR /></div>
         </div>
-        <div class="row">
+        <style>
+.highlight {
+  background-color: yellow;
+}
+
+.highlight2 {
+  background-color: white;
+}
+</style>
+<div class="row">
     <div class="col-12">
         <h1>EP1: แนะนำตัว <small>(<a href='ep.html'>ดูทุก EP</a>)</small></h1>
     </div>
-
     <div class="col-12 col-md-3 text-center">
         <img src="https://storage.googleapis.com/mokatalk/assets/mokatalk_logo.jpg" class="img-fluid" />
         ความยาว: <span class="badge badge-info">00:06:55</span>
     </div>
-
     <div class="col-12 col-md-9">
         <h2>แนะนำตัว <small>แนะนำตัวมกราคม</small></h2>
         แนะนำตัวมกราคม และรายการมกกะทอล์ค<BR />มารู้จักรายการมกกะทอล์คและผู้ดำเนินรายการมกราคมกันเถอะ!
-
         <p>ถูกเผยแพร่เมื่อวันที่ Mon, 12 Apr 2021 19:00:00 +0700</p>
         <HR />
         ฟังในหน้านี้ หรือทาง
         <div class="row">
             <div class="col-4">
-                <a href="#"><img src="https://storage.googleapis.com/mokatalk/assets/Apple_Podcasts.png" class="img-fluid"></a>
+                <a href="#" target="_blank"><img src="https://storage.googleapis.com/mokatalk/assets/Apple_Podcasts.png" class="img-fluid"></a>
             </div>
             <div class="col-4">
-                <a href="#"><img src="https://storage.googleapis.com/mokatalk/assets/Google_Podcasts.png" class="img-fluid"></a>
+                <a href="#" target="_blank"><img src="https://storage.googleapis.com/mokatalk/assets/Google_Podcasts.png" class="img-fluid"></a>
             </div>
             <div class="col-4">
-                <a href="#"><img src="https://storage.googleapis.com/mokatalk/assets/Spotify.png" class="img-fluid"></a>
+                <a href="https://open.spotify.com/episode/3KxQ7s2kS6Iplo4LccDeUU?si=zSkS2Fa8TzqFmwrFAKsH2w" target="_blank"><img src="https://storage.googleapis.com/mokatalk/assets/Spotify.png" class="img-fluid"></a>
             </div>
         </div>
     </div>
-
     <div class="col-12">
         <hr />
         <div class="row">
-            <div class="col-12 col-md-4">
-                <audio controls>    
+            <div class="col-12 col-md-4 text-center">
+                <audio id="player" onplaying="player_play()" controls>    
                 <source src="https://storage.googleapis.com/mokatalk/ep/mokatalk_ep1.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
-  </audio>
+                </audio><BR />
+                (<a href="https://storage.googleapis.com/mokatalk/ep/mokatalk_ep1.mp3" target="_blank">Download</a>)
             </div>
             <div class="col-12 col-md-8">
-                <i>ยังไม่มีคำบรรยาย</i>
+                <span onclick='player_goto("0")' id='sec_0'>[Intro]</span><BR/><span onclick='player_goto("5")' id='sec_5'>สวัสดีท่านผู้ฟังครับ ผมมกราคมครับ</span><BR/><span onclick='player_goto("8")' id='sec_8'>ตอนนี้เป็นตอนแรกของรายการมกกะท๊อคครับ</span><BR/><span onclick='player_goto("10")' id='sec_10'>สำหรับ EP นี้ขอเป็น EP สำหรับแนะนำตัวและเล่าเรื่องราวของที่มาและที่ไปของพอตคาสนี้ก่อนนะครับ</span><BR/><span onclick='player_goto("16")' id='sec_16'>ก็ขอ อนุญาตแนะนำตัวอีกครั้ง</span><BR/><span onclick='player_goto("19")' id='sec_19'>ผมมกราคมครับ</span><BR/><span onclick='player_goto("20")' id='sec_20'>ปัจจุบันเป็นสมาชิกในชุมชนแอนโทรโพมอร์ฟิคในประเทศไทย บางคนอาจเรียกว่า เฟอร์รี่แฟนด้อน</span><BR/><span onclick='player_goto("25")' id='sec_25'>คอมมูเคโมะโนะ และมีอีกหลายชื่อที่ถูกเรียกครับ</span><BR/><span onclick='player_goto("29")' id='sec_29'>ตอนนี้ส่วนใหญ่ผมจะอยู่กับกลุ่มชื่อว่าแอนโทรไทย</span><BR/><span onclick='player_goto("33")' id='sec_33'>ซึ่งเป็นกลุ่มที่ส่วนใหญ่แล้วจะมีกิจกรรมเป็นหลักกันในโปรแกรมสนทนาชื่อว่าเทเลแกรม</span><BR/><span onclick='player_goto("40")' id='sec_40'>เอาไว้เดียวถ้ามีเวลาจะมาลงรายละเอียดอีกครั้งนึงนะครับ ว่าเป็นโปรแกรมยังไง คุยอะไรกันนะครับ</span><BR/><span onclick='player_goto("45")' id='sec_45'>โดยตัวผมเองจริง ๆ แล้วนะครับเป็นสมาชิกในชุมชนแอนโทรนี้มาได้ประมาณสัก 12 ปี แล้วนะครับ</span><BR/><span onclick='player_goto("52")' id='sec_52'>ตั้งแต่เริ่มเข้ามหาวิทยาลัยปีหนึ่งเลย</span><BR/><span onclick='player_goto("54")' id='sec_54'>โดยผมใช้สัตว์แทนตัวหรืออาจเรียกว่าเฟอร์โซน่าเป็นหมาป่าไคโยตี้ครับ</span><BR/><span onclick='player_goto("60")' id='sec_60'>เรื่องรายละเอียดเกี่ยวกับว่าสัตว์แทนตัว คืออะไร  เฟอร์โซน่า คืออะไร หรือทำไมต้องเลือกหมาป่าไคโยตี้</span><BR/><span onclick='player_goto("66")' id='sec_66'>ผมขอเอาตบแปะเอาไว้ใน EP อื่น ๆ นะครับ</span><BR/><span onclick='player_goto("70")' id='sec_70'>เพราะอาจยาวมากไปนิดนึง</span><BR/><span onclick='player_goto("72")' id='sec_72'>ก่อนหน้าทำพอตคาสเนี่ยผมเคยได้มีโอกาส ไปช่วยเพื่อน ๆ ทำอีเว้นที่เกี่ยวกับ</span><BR/><span onclick='player_goto("78")' id='sec_78'>ชุมชนแอนโทรนี้อยู่บ้าง อาทิเช่น งานจำหน่ายสินค้าและงานมีตติ้ง อาจเอาประสบการณ์ที่ได้จากตรงนั้นมาเล่าให้ฟังบ้างครับ</span><BR/><span onclick='player_goto("89")' id='sec_89'>ต่อมานะครับก็คือ</span><BR/><span onclick='player_goto("91")' id='sec_91'>ผมขออนุญาตนิดนึงคือ</span><BR/><span onclick='player_goto("93")' id='sec_93'>ก่อนที่พวกเราจะไปกันไกลกว่านี้เนี่ย</span><BR/><span onclick='player_goto("95")' id='sec_95'>ผมกลัวผู้ฟังจะเข้าใจผิดว่าพอตคาสนี้จะเจาะลึกหรือพูดเรื่องราวเกี่ยวกับชุมชนแอนโทรฯ เพียงอย่างเดียว</span><BR/><span onclick='player_goto("102")' id='sec_102'>จริงๆแล้ว สำหรับพอตคาสนี้ผมจะมาเล่าเรื่องทั่ว ๆ ไปที่เกิดขึ้นมาในชีวิตของผมซะมากกว่า</span><BR/><span onclick='player_goto("109")' id='sec_109'>จริงๆเรื่องทั่ว ๆ ไปที่พูดถึงเนี่ย ทั้งที่มาจาก</span><BR/><span onclick='player_goto("112")' id='sec_112'>ชุมชนเอง ทั้งที่เป็นเรื่องทั่ว ๆ ไปที่ บางทีก็อยู่ ๆ ก็นึกขึ้นมาได้  บางทีก็อยู่ๆอยากจะเล่าขึ้นมา</span><BR/><span onclick='player_goto("120")' id='sec_120'>ซึ่งเนื้อหาในรายการจะไม่ได้เจาะหรือลงลึกลงไปในประเด็นใดประเด็นหนึ่งเป็นพิเศษครับ</span><BR/><span onclick='player_goto("125")' id='sec_125'>แต่ว่าอาจมีความหลากหลายนิดนึงนะครับ</span><BR/><span onclick='player_goto("128")' id='sec_128'>คือ อยากวางพอตคาสนี้เป็นพอตคาสที่ใช้เล่าเรื่องเกี่ยวกับตัวเอง หรือเรื่องที่อยากเล่าเสียมากกว่า</span><BR/><span onclick='player_goto("135")' id='sec_135'>โดยในพอตคาสนี้ผมจะพยายามแกะบทพูดออกมาและใส่ลิงค์อ้างอิงเอาไว้เผื่อมี</span><BR/><span onclick='player_goto("140")' id='sec_140'>ผู้ฟังท่านใดที่อยากอ่านข้อมูลเพิ่มเติมไว้ในเว็บไซต์ mokatalk.anthro.asia</span><BR/><span onclick='player_goto("155")' id='sec_155'>ก็เนื่องจากครั้งนี้เป็นครั้งแรกที่พวกเรามาเจอกันในพอตคาสนี้นะครับ ผมขออนุญาตนะครับ</span><BR/><span onclick='player_goto("160")' id='sec_160'>อันนี้จะขออนุญาตพูดแค่ใน EP แรกครั้งเดียวนะครับ ก็คือ</span><BR/><span onclick='player_goto("163")' id='sec_163'>ขออธิบายเกี่ยวกับตัวพอตคาสก่อนเพื่อไม่ให้เกิดความเข้าใจผิดกันนะครับ</span><BR/><span onclick='player_goto("168")' id='sec_168'>เนื้อหารายการไม่ว่าใน EP ใดๆในม๊กกะท๊อล</span><BR/><span onclick='player_goto("171")' id='sec_171'>ไม่ว่าจากตัวผมเองหรือจากผู้ที่มาเป็นแขกรับเชิญ เป็นเพียงความเห็นส่วนบุคคลเท่านั้นนะครับ</span><BR/><span onclick='player_goto("177")' id='sec_177'>ไม่ใช่ข้อเท็จจริงหรือมาตราฐานใด ๆ นะครับ</span><BR/><span onclick='player_goto("180")' id='sec_180'> ไม่สามารถใช้อ้างอิง หรือ นำไปใช้เพื่อเป็นตัวกำหนดบรรทัดฐานทางสังคมได้</span><BR/><span onclick='player_goto("184")' id='sec_184'>เนื่องจากรายการพอตคาสจะมีลักษณะเป็นแบบออนดีมานหรือรายการตามอุปสงค์ซึ่ง</span><BR/><span onclick='player_goto("190")' id='sec_190'>นั่นหมายความว่าข้อมูลที่ออกไปแล้วอาจไม่ได้ถูกอัพเดตให้ทันสมัยต่อสังคม วัฒนธรรม และสถานการณ์ต่าง ๆ ที่อาจเกิดการเปลี่ยนแปลงตลอดเวลา</span><BR/><span onclick='player_goto("198")' id='sec_198'>ซึ่งอาจทำให้สิ่งที่ผู้พูดนะครับ</span><BR/><span onclick='player_goto("201")' id='sec_201'>ที่ได้พูดไปในรายการแล้วนะครับหรือ ได้แสดงความคิดเห็น ไปในพอตคาสรายการนี้</span><BR/><span onclick='player_goto("204")' id='sec_204'>อาจมีทัศนะคติ หรือ แนวคิดที่อาจเปลี่ยนแปลงไปก็ได้</span><BR/><span onclick='player_goto("209")' id='sec_209'>ดังนั้น ผู้ฟังทุกท่านควร ใช้วิจารณยานในการรับฟัง</span><BR/><span onclick='player_goto("213")' id='sec_213'>ควรหาข้อมูลอ้างอิงอ่านประกอบเพิ่มเติม เพราะต้องยอมรับว่าพอตคาสเป็นรายการส่วนตัวไม่ใช่รายเพื่อสาธารณะชน</span><BR/><span onclick='player_goto("220")' id='sec_220'>ดังนั้นเนื้อหาอาจมีอคติที่ไม่ได้ตั้งใจของผู้พูด หรืออาจกลายเป็นห้องแห่งเสียงสะท้อน หรือที่เรียกกันว่า Echo Chamber โดยไม่ได้ตั้งใจ</span><BR/><span onclick='player_goto("229")' id='sec_229'>หากมีการแก้ไขเนื้อหาในรายการ อาจทำโดยการแก้ไขในเว็บไซต์ของพอตคาสเพราะไฟล์เสียงที่ออกไปแล้วอาจไม่สามารถตามแก้ไขได้นะครับ</span><BR/><span onclick='player_goto("241")' id='sec_241'>ถ้าผู้ฟังท่านใดพบความผิดปกติหรือพบว่าเนื้อไม่ถูกต้อง ไม่เห็นด้วย  หรือมีอะไรที่แย้งขึ้นมานะครับ</span><BR/><span onclick='player_goto("248")' id='sec_248'>สามารถส่งข้อความมาทวงติงได้ตามช่องทางในเว็บไซต์ของพอตคาสที่แจ้งไว้ตอนต้นได้</span><BR/><span onclick='player_goto("253")' id='sec_253'>พอตคาสนี้ถูกระบุลิขสิทธิ์เป็น Cretive Common CC-BY-NC-ND แสดงที่มา ไม่ใช้เพื่อการค้า และไม่ให้แก้ไขครับ</span><BR/><span onclick='player_goto("262")' id='sec_262'>ช่วงสองสามเดือนก่อน ถ้าใครได้ติดตามพอตคาสก่อนหน้านี้ที่ผมทำมา หรือที่รู้จักในชื่อพอตคาส ‘แอนทอล์ค’</span><BR/><span onclick='player_goto("272")' id='sec_272'>ซึ่งออกมาราวๆสองถึงสามตอน และไม่ได้ทำต่อ</span><BR/><span onclick='player_goto("281")' id='sec_281'>ก็มีท่านผู้ฟังบางท่านมาถาม เอ… ไม่ได้ทำต่อแล้วเหรอ</span><BR/><span onclick='player_goto("286")' id='sec_286'>ขอสารภาพเลยว่า สำหรับแอนทอลร์คนั้น ผมหมดมุกในการทำต่อ</span><BR/><span onclick='player_goto("291")' id='sec_291'>แบบไม่รู้ว่าจะทำเนื้อหาหรือพูดอะไรต่อครับ เพราะว่าผมรู้สึกว่าข้อมูลหรือเนื้อหาที่เสนอออกไปนั้น มีขอบเขตที่จะว่ากว้างก็กว้าง จะว่าแคบก็แคบ</span><BR/><span onclick='player_goto("302")' id='sec_302'>คือเนื้อหาเฉพาะด้านแต่ตัวผมเองก็ไม่ได้มีความสามารถ ไม่ได้มีความรับผิดชอบมากพอต่อความเสียหายที่อาจเกิดขึ้นกับเนื้อหาที่นำเสนอออกไป</span><BR/><span onclick='player_goto("313")' id='sec_313'>เ พราะว่ากันตามตรงเลยคือเนื้อหาหลายๆอย่างในนั้นค่อนข้างมีความเกี่ยวพันกับบุคคลอื่น ๆ ในชุมชนเยอะพอสมควร มันยากที่จะตรวจสอบข้อมูลให้ถูกต้อง</span><BR/><span onclick='player_goto("325")' id='sec_325'>จึงเกิดความคิดที่ว่า โอเค ถ้างั้นเราทำพอตคาสที่เราทำแล้วสนุกดีกว่ามั้ย</span><BR/><span onclick='player_goto("330")' id='sec_330'>คือไม่ได้บอกว่าจะทำคอนเท็นที่ไม่รับผิดชอบต่อสังคม แต่อยากทำคอนเท็นที่มันสบายใจกว่านี้</span><BR/><span onclick='player_goto("340")' id='sec_340'>จึงเกิดไอเดียว่า ทำมกกะทอล์คขึ้นมาล่ะกัน เพราะอยากจะทำให้เป็นงานอดิเรกด้วย</span><BR/><span onclick='player_goto("348")' id='sec_348'>อยากจะพูดถึงเนื้อหาที่ตัวเองอยากเล่าเรื่อง ไม่ว่าจะเป็นเรื่องของประสบการณ์ที่ได้เจอมา เรื่องที่รู้ว่าว่าน่าสนใจอยากเล่าให้ฟังบ้าง</span><BR/><span onclick='player_goto("356")' id='sec_356'>คือจะลองหาเรื่องที่น่าสนใจ ที่อยากจะเอามาแบ่งปันให้ฟังกันนะครับ</span><BR/><span onclick='player_goto("361")' id='sec_361'>แล้วพอดี ได้มีโอกาสไปฟังและไปอ่านเรื่องเกี่ยวกับพอตคาสของเดอะสแตนดาทจากคำกล่าว</span><BR/><span onclick='player_goto("368")' id='sec_368'>‘ถ้าเริ่ม launch รายการไปแล้วควรจัดอย่างต่อเนื่อง ทำพอดแคสต์ มันสำคัญที่สุดตรงความสม่ำเสมอ’</span><BR/><span onclick='player_goto("375")' id='sec_375'>เลยเกิดแรงบรรดาลใจนิดนึง</span><BR/><span onclick='player_goto("377")' id='sec_377'>ว่าเริ่มตั้งมั่นว่าจะตั้งเป้าหมายให้ตัวเองว่าจะออกพอตคาสอย่างน้อยอาทิตย์ล่ะตอน</span><BR/><span onclick='player_goto("382")' id='sec_382'>คือก็เลยตัดสินใจตอนนี้ครับ ว่าหลังจากตอนนี้ออกไปนะครับ</span><BR/><span onclick='player_goto("388")' id='sec_388'>ผมจะพยายามทำให้ได้อาทิตย์ล่ะตอน</span><BR/><span onclick='player_goto("390")' id='sec_390'>จะลองดูว่าจะสัญญาตัวเองได้นานแค่ไหนเหมือนกัน</span><BR/><span onclick='player_goto("393")' id='sec_393'>เอาไว้ถ้ามีโอกาสจะชวนเพื่อน ๆ มาพูดคุยในพอตคาสกัน</span><BR/><span onclick='player_goto("398")' id='sec_398'>แลกเปลี่ยนความคิดเห็นกันน่าจะสนุกและมีสีสันต์มากขึ้นนะครับ</span><BR/><span onclick='player_goto("404")' id='sec_404'>กับการทำพอตคาส</span><BR/><span onclick='player_goto("405")' id='sec_405'>แต่สำหรับ EP นี้ผมมกราคมขอลาไปก่อนครับ</span><BR/><span onclick='player_goto("409")' id='sec_409'>แล้วพบกันใหม่ใน EP หน้า สำหรับ EP นี้ สวัสดีครับ</span><BR/>
             </div>
         </div>
     </div>
-
     <div class="col-12">
         <hr />
         <h2>ข้อมูลอ้างอิง (Footnote)</h2>
         <i>ไม่ได้ระบุไว้</i>
     </div>
-
-
 </div>
+
+<script>
+
+//document.getElementById("sec_0").style.color = "red";
+
+    function highlight(text) {
+        var inputText = document.getElementById("inputText");
+        var innerHTML = inputText.innerHTML;
+        var index = innerHTML.indexOf(text);
+        if (index >= 0) { 
+        innerHTML = innerHTML.substring(0,index) + "<span class='highlight'>" + innerHTML.substring(index,index+text.length) + "</span>" + innerHTML.substring(index + text.length);
+        inputText.innerHTML = innerHTML;
+        }
+    }
+
+    var audio = document.getElementById("player");
+
+    //document.getElementById("player").currentTime
+
+
+    function player_goto(sec){
+        document.getElementById("player").currentTime = sec;
+        document.getElementById("player").play();
+    }
+
+    var is_play = false;
+    function player_play(){
+        setInterval(function(){ 
+            interval_do();
+        }, 500);
+    }
+
+    function interval_do(){
+        var time = Math.floor(document.getElementById("player").currentTime);
+        document.getElementById("sec_"+time).style.color = "red";
+    }
+</script>
         <div class="row">
             <div class="col-12">
                 <hr />
                 <footer>
-                    <small><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="noopener noreferrer nofollow"><img src="https://storage.googleapis.com/mokatalk/assets/by-nc-nd.png" width="100" /></a>
+                    <small><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener noreferrer nofollow"><img src="https://storage.googleapis.com/mokatalk/assets/by-nc-nd.png" width="100" /></a>
                     2021 - <a href="https://mokatalk.anthro.asia">MokaTalk Podcast</a> by <a href="https://mokarakom.anthro.asia">Mokarakom</a> </small>
                 </footer>
             </div>
