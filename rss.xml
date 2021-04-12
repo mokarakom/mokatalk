@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+    xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">
+<channel>
+<title>มกกะทอล์ค (MokaTalk)</title>
+<copyright>CC BY-NC-ND 4.0</copyright>
+<googleplay:owner>mokarakom+podcast@anthro.ltd</googleplay:owner>
+<googleplay:author>Mokarakom</googleplay:author>
+<description>บันทึกของไคโยตี้มกราคมที่จะมาเล่าเรื่องเกี่ยวกับตัวเองและชุมชนแอนโทรโพโมฟิคที่ประสบมา</description>
+<googleplay:image href="https://storage.googleapis.com/mokatalk/assets/mokatalk_logo.jpg"/>
+<link>https://mokatalk.anthro.asia/</link>
+<language>th</language>
+<itunes:subtitle>Mokarakom Journals</itunes:subtitle>
+<itunes:author>Mokarakom</itunes:author>
+<itunes:summary>บันทึกของไคโยตี้มกราคมที่จะมาเล่าเรื่องเกี่ยวกับตัวเองและชุมชนแอนโทรโพโมฟิคที่ประสบมา</itunes:summary>
+<itunes:owner>
+    <itunes:name>Mokarakom</itunes:name>
+    <itunes:email>mokarakom+podcast@anthro.ltd</itunes:email>
+</itunes:owner>
+<itunes:explicit>no</itunes:explicit>
+<itunes:image href="https://storage.googleapis.com/mokatalk/assets/mokatalk_logo.jpg" />
+<itunes:category text="Society &amp; Culture">
+  <itunes:category text="Personal Journals" />
+</itunes:category>
+<item>
+    <title>แนะนำตัว</title>
+    <itunes:summary>แนะนำตัวมกราคม และรายการมกกะทอล์ค</itunes:summary>
+    <description>แนะนำตัวมกราคม และรายการมกกะทอล์ค</description>
+    <link>https://mokatalk.anthro.asia/ep-1.html</link>
+    <enclosure url="https://storage.googleapis.com/mokatalk/ep/mokatalk_ep1.mp3" type="audio/mpeg" length="2621440"></enclosure>
+    <pubDate>Mon, 12 Apr 2021 19:00:00 +0700</pubDate>
+    <itunes:author>Mokarakom</itunes:author>
+    <itunes:duration>415</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+    <guid>https://mokatalk.anthro.asia/ep-1.html?2621440</guid>
+</item>
+
+</channel>
+</rss>
